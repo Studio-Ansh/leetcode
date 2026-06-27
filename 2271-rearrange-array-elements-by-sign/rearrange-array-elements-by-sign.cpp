@@ -12,20 +12,12 @@ public:
             else
                 neg.push_back(nums[i]);
         }
-        int p =0;
-        int n =0;
 
-        for(int i =0; i<nums.size(); i++) {
 
-            if(i %2 ==0){
-                ans.push_back(pos[p]);
-                p++;
-            }
+        for(int i =0; i<pos.size(); i++) {
 
-            else {
-                ans.push_back(neg[n]);
-                n++;
-            }
+            ans.push_back(pos[i]);
+            ans.push_back(neg[i]);
         }
         return ans;
     }
